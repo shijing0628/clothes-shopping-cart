@@ -128,7 +128,7 @@ function displayCart() {
        <div class="product-item">
             <div class="product">
                 <ion-icon name="close-circle"></ion-icon>
-                <img src="./images/${item.tag}.jpg"/>
+               <a href="/"><img src="./images/${item.tag}.jpg"/></a>
                 <span>${item.name}</span>
             </div>
             <div class="price">${item.price}</div>
@@ -141,6 +141,7 @@ function displayCart() {
           </div>
         `;
     });
+
     productContainer.innerHTML += `
         <div class="basketTotalContainer">
             <h4 class="basketTotalTitle">
